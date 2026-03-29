@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#BD2122">
+<title>Midas Tools</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0B0B0B;color:#E8E4DE;font-family:'Cairo',system-ui,sans-serif;min-height:100vh;display:flex;flex-direction:column}
+.nav{padding:12px 24px;border-bottom:1px solid #1E1E24;display:flex;align-items:center;gap:16px}
+.nav img{height:24px}
+.nav-links{display:flex;gap:6px;margin-left:auto}
+.nav-links a{padding:7px 16px;border-radius:8px;font-size:12px;font-weight:600;text-decoration:none;color:#888;border:1px solid #2A2A32;transition:all .15s}
+.nav-links a:hover{border-color:#555;color:#ddd}
+.nav-links a.active{border-color:#BD2122;background:rgba(189,33,34,.15);color:#fff}
+.hero{flex:1;display:flex;align-items:center;justify-content:center;padding:40px 20px}
+.hero-inner{text-align:center;max-width:700px}
+.hero h1{font-size:48px;font-weight:800;margin-bottom:8px;line-height:1.1}
+.hero h1 span{color:#BD2122}
+.hero p{color:#666;font-size:16px;margin-bottom:48px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{background:#151518;border:2px solid #1E1E24;border-radius:16px;padding:32px 24px;text-decoration:none;color:inherit;transition:all .2s;text-align:left}
+.card:hover{border-color:#BD2122;transform:translateY(-4px);box-shadow:0 12px 40px rgba(189,33,34,.15)}
+.card-icon{font-size:36px;margin-bottom:16px}
+.card h2{font-size:20px;font-weight:700;margin-bottom:6px}
+.card p{font-size:13px;color:#888;line-height:1.5}
+.card-tag{display:inline-block;margin-top:12px;padding:4px 12px;border-radius:20px;font-size:11px;font-weight:600;background:rgba(189,33,34,.1);color:#BD2122;border:1px solid rgba(189,33,34,.2)}
+@media(max-width:600px){
+  .cards{grid-template-columns:1fr}
+  .hero h1{font-size:32px}
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <img src="ads/icon-192.png" alt="M" style="width:28px;height:28px;border-radius:6px">
+  <span style="font-weight:700;font-size:14px;letter-spacing:1px">MIDAS TOOLS</span>
+  <div class="nav-links">
+    <a href="./" class="active">Home</a>
+    <a href="./ads/">Ad Generator</a>
+    <a href="./sku/">SKU Reader</a>
+  </div>
+</nav>
+<div class="hero">
+  <div class="hero-inner">
+    <h1>Midas <span>Marketing</span> Tools</h1>
+    <p>Internal tools for the Midas Furniture marketing team</p>
+    <div class="cards">
+      <a href="./ads/" class="card">
+        <div class="card-icon">📐</div>
+        <h2>Ad Template Generator</h2>
+        <p>Generate product ad images & videos for Meta, TikTok, and Snapchat. Multi-product upload, auto-pricing, Ken Burns video export.</p>
+        <span class="card-tag">Image + Video</span>
+      </a>
+      <a href="./sku/" class="card">
+        <div class="card-icon">📷</div>
+        <h2>SKU Reader</h2>
+        <p>Scan and read product SKU codes from images. Batch upload, auto-detect, and extract product data.</p>
+        <span class="card-tag">Scanner</span>
+      </a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
